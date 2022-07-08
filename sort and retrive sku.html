@@ -1,0 +1,65 @@
+
+<head>
+	<script>
+	    function getSKU() {
+	  var text = document.getElementById("text").value;
+      var sorted = text.split(" ").sort();
+       	 // console.log(sorted);
+       	 //     document.getElementById('sorted').innerHTML = sorted;
+          var sku = "";
+          for(value of sorted)
+          {
+          	if(value.indexOf("THBP") == 0)
+          		sku +=value + "\n";
+          }
+          console.log(sku);
+        document.getElementById('sku').innerHTML = sku;
+
+
+
+
+	}
+    // var text = document.getElementById("demo").value;
+    //  console.log(text);
+
+</script>
+</head>
+
+	<body>
+		<input id="text" type="text" name="text">
+		<button onclick={getSKU()}> Get SKU</button>		
+        <textarea id="sku"></textarea>
+	</body>
+
+
+<!-- 
+
+var res = str.split(" ");
+
+res.sort();
+ -->
+
+<!-- 
+
+[7:55 AM, 6/25/2021] Shree Khatri: Indigo Florals Hand Block Printed Pure Cotton Fabric – Pre Cut 2.5 Meter – THBPPCR24
+[7:55 AM, 6/25/2021] Shree Khatri: Light Shade Marble Print Pure Cotton Fabric – Pre Cut 2.5 Meter – THBPPCR35
+[7:55 AM, 6/25/2021] Shree Khatri: Indigo Floral Pattern Hand Block Printed Pure Cotton Fabric – Pre Cut 2.5 Meter – THBPPCR22
+[7:56 AM, 6/25/2021] Shree Khatri: Pink & Black Marble Print Pure Cotton Fabric – Pre Cut 2.5 Meter – THBPPCR36
+[7:56 AM, 6/25/2021] Shree Khatri: Light Shade Marble Print Pure Cotton Fabric – Pre Cut 2.5 Meter – THBPPCR32
+[7:56 AM, 6/25/2021] Shree Khatri: Pure Cotton Fabric for Kurti & Palazzo/Pants – Pre Cut 2.5 + 2.5 Meter each – THBPTB22
+[7:56 AM, 6/25/2021] Shree Khatri: Light Shade Marble Print Pure Cotton Fabric – Pre Cut 2.5 Meter – THBPPCR39
+[7:57 AM, 6/25/2021] Shree Khatri: Bagru Print Chanderi Silk Top & Dupatta With Cotton Bottom – HandBlock Printed Salwar Suit Set – THBPCS05
+[7:57 AM, 6/25/2021] Shree Khatri: Chanderi Silk Top & Dupatta With Cotton Bottom – HandBlock Printed Salwar Suit Set – THBPCS07
+[7:57 AM, 6/25/2021] Shree Khatri: Chanderi Silk Top & Dupatta With Cotton Bottom – HandBlock Printed Salwar Suit Set – THBPCS14
+[7:58 AM, 6/25/2021] Shree Khatri: Unstitched Floral Hand Block Printed Cotton Suit with Chiffon Dupatta – THBPC34
+[7:58 AM, 6/25/2021] Shree Khatri: Unstitched Floral Hand Block Printed Cotton Suit with Chiffon Dupatta – THBPC18
+[7:59 AM, 6/25/2021] Shree Khatri: Unstitched Floral Hand Block Printed Cotton Suit with Chiffon Dupatta – THBPC14
+[7:59 AM, 6/25/2021] Shree Khatri: Unstitched Floral Hand Block Printed Cotton Suit with Chiffon Dupatta – THBPC17
+[7:59 AM, 6/25/2021] Shree Khatri: Unstitched Floral Hand Block Printed Cotton Suit with Chiffon Dupatta – THBPC26
+[8:00 AM, 6/25/2021] Shree Khatri: Unstitched Floral Hand Block Printed Cotton Suit with Chiffon Dupatta – THBPC31
+[8:01 AM, 6/25/2021] Shree Khatri: Unstitched Floral Hand Block Printed Cotton Suit with Chiffon Dupatta – THBPC44
+[8:01 AM, 6/25/2021] Shree Khatri: Unstitched Floral Hand Block Printed Cotton Suit with Chiffon Dupatta – THBPC01
+[8:01 AM, 6/25/2021] Shree Khatri: Unstitched Floral Hand Block Printed Cotton Suit with Chiffon Dupatta – THBPC39
+[8:01 AM, 6/25/2021] Shree Khatri: Unstitched Floral Hand Block Printed Cotton Suit with Chiffon Dupatta – THBPC03 
+
+-->
